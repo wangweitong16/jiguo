@@ -155,3 +155,14 @@ footer .center .copy {
   left: 50%;
   transform: translate(-50%);
 }
+
+footer .toTop {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 59px;
+  right: 121px;
+  background: #E8E8E8 url(./img/back.png) no-repeat 7px 14px;
+}
