@@ -135,11 +135,12 @@ footer .center dl dd a {
 
 footer .center dl dd a:nth-child(1) {
   float: left;
+  width: 55px;
 }
 
 footer .center dl dd a:nth-child(2) {
-  float: right;
-  margin-left: 5px;
+  float: left;
+  margin-left: 30px;
 }
 
 footer .center dl dd:nth-child(2) {

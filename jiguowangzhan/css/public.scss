@@ -112,10 +112,11 @@ footer{
                     overflow: hidden;
                     &:nth-child(1){
                         float: left;
+                        width: 55px;
                     }
                     &:nth-child(2){
-                        float: right;
-                        margin-left: 5px;
+                        float: left;
+                        margin-left: 30px;
                     }
                 }
                 &:nth-child(2){
