@@ -64,6 +64,7 @@ header .header_main button {
   border: 1px solid #F92929;
   border-radius: 3px;
   box-sizing: border-box;
+  background-color: white;
 }
 
 header .header_main .search {
@@ -136,15 +137,29 @@ footer .center dl dd a {
 footer .center dl dd a:nth-child(1) {
   float: left;
   width: 55px;
+  margin-bottom: 2px;
 }
 
 footer .center dl dd a:nth-child(2) {
   float: left;
-  margin-left: 30px;
+  margin-left: 15px;
+  margin-bottom: 2px;
 }
 
 footer .center dl dd:nth-child(2) {
   margin-top: 20px;
+}
+
+footer .center #buy dd a {
+  width: 147px;
+}
+
+footer .center #shop dd a {
+  width: 170px;
+}
+
+footer .center #free dd a {
+  width: 92px;
 }
 
 footer .center .copy {

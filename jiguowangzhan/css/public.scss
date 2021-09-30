@@ -53,6 +53,7 @@ header{
             border: 1px solid $c_color;
             border-radius: 3px;
             box-sizing: border-box;
+            background-color: white;
 
         }
         .search{
@@ -113,16 +114,42 @@ footer{
                     &:nth-child(1){
                         float: left;
                         width: 55px;
+                        margin-bottom: 2px;
                     }
                     &:nth-child(2){
-                        float: left;
-                        margin-left: 30px;
+                        float:left;
+                        margin-left: 15px;
+                        margin-bottom: 2px;
                     }
                 }
                 &:nth-child(2){
                     margin-top: 20px;
                 }
             }
+        }
+        #buy{
+            dd{
+                 a{
+                    width: 147px;
+                }
+                }
+            
+        }
+        #shop{
+            dd{
+                 a{
+                    width: 170px;
+                }
+                }
+            
+        }
+         #free{
+            dd{
+                 a{
+                    width: 92px;
+                }
+                }
+            
         }
         .copy{
             text-align: center;
