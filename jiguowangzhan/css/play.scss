@@ -36,7 +36,6 @@ article.new {
         width: 1000px;
         margin: 0 auto;
         overflow: hidden;
-
         .out {
             overflow: hidden;
             float: left;
@@ -45,8 +44,9 @@ article.new {
             width: 220px;
             height: 223px;
             overflow: hidden;
-            margin:25px 0 0 37px;
-            &:nth-child(4n+1){
+            margin: 25px 0 0 37px;
+
+            &:nth-child(4n+1) {
                 margin-left: 0;
             }
 
@@ -57,7 +57,8 @@ article.new {
 
             p {
                 font-size: 14px;
-                &:last-of-type{
+
+                &:last-of-type {
                     font-size: 13px;
                     color: #AFAFAF;
                     line-height: 20px;
@@ -71,6 +72,7 @@ article.new {
 
                 span {
                     float: left;
+
                     &:nth-child(n+2) {
                         color: #ABABAB;
                         float: right;
@@ -79,20 +81,23 @@ article.new {
                         background: url(../css/img/reply.png) no-repeat 0px 3px;
                         margin-left: 3px;
                     }
-                    &:nth-child(3){
+
+                    &:nth-child(3) {
                         background: url(../css/img/xin.png) no-repeat 0px 3px;
                     }
                 }
             }
         }
     }
-    .more{
+
+    .more {
         text-align: center;
         padding: 50px 0;
         font-size: 16px;
         overflow: hidden;
         color: #FF6B4A;
-        >span{
+
+        >span {
             float: left;
             padding-left: 20px;
             margin-left: 50%;

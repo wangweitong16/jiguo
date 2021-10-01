@@ -40,31 +40,32 @@
 		</div>
 		<!-- 最新模块 -->
 		<article class="new">
-			<div class="main">
-
-			</div>
+			<div class="main"></div>
+			<!-- art-temlate渲染 -->
+			<script id="art" type="text/html">
+				<% for(var i = 0; i < value.length; i++){ %>
+					<% for(var j = 0; j < value[i].length; j++){ %>
+						<div class="out">
+							<img src="<%= value[i][j].img %>" alt="">
+							<p><%= value[i][j].text %></p>
+							<p><%= value[i][j].description %></p>
+							<div>
+								<% if (value[i][j].price != undefined&&value[i][j].price != '') { %> 
+									<span><%= value[i][j].price %></span>
+								<% } else { %>
+									<span>暂无</span>
+								<% } %>
+								<span><%= value[i][j].like %></span>
+								<span><%= value[i][j].words %></span>
+							</div>
+						</div>
+					<% } %>
+				<% } %>
+			</script>
 			<div class="more">
 				<span>点击加载更多</span>
 			</div>
 		</article>
-		<script id="art" type="text/html">
-			<% for(var i = 0; i < value.length; i++){ %>
-				<% for(var j = 0; j < value[i].length; j++){ %>
-					<div class="out">
-						
-						<img src="<%= value[i][j].img %>" alt="">
-						<p><%= value[i][j].text %></p>
-						<p><%= value[i][j].description %></p>
-						<div>
-							<span><%= value[i][j].price %></span>
-							<span><%= value[i][j].like %></span>
-							<span><%= value[i][j].words %></span>
-						</div>
-					</div>
-
-				<% } %>
-			<% } %>
-		</script>
 	</section>
 
 	<!-- 底部 -->
@@ -137,27 +138,6 @@
 		<div class="toTop"></div>
 	</footer>
 </body>
-<script>
-	var Ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-	Ajax.open('get', 'http://192.168.1.107:3000/data/play_new.json', true);
-	Ajax.send();
-	Ajax.onreadystatechange = function () {
-		if (Ajax.readyState == 4) {
-			if (Ajax.status == 200) {
-				var res = JSON.parse(Ajax.responseText);
-				useres(res);
-			} else {
-				console.log(Ajax.status);
-			}
-		}
-	}
-
-	function useres(res) {
-		var html = template('art', {
-			value: res
-		})
-		document.getElementsByClassName('main')[0].innerHTML = html;
-	}
-</script>
-
+<script src="./js/play.js"></script>
+<script src="./js/public.js"></script>
 </html>
