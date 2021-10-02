@@ -28,14 +28,14 @@ section .title div.c_color {
   border-bottom: solid #F8572B 4px;
 }
 
-article.new {
+article.new, article.hot {
   background-color: #f7f7f7;
   overflow: hidden;
   padding-bottom: 25px;
   position: relative;
 }
 
-article.new .loading {
+article.new .loading, article.hot .loading {
   width: 400px;
   line-height: 120px;
   text-align: center;
@@ -48,13 +48,13 @@ article.new .loading {
   z-index: 1;
 }
 
-article.new .main {
+article.new .main, article.hot .main {
   width: 1000px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-article.new .main .out {
+article.new .main .out, article.hot .main .out {
   overflow: hidden;
   float: left;
   border: 1px solid #EAEAEA;
@@ -65,36 +65,36 @@ article.new .main .out {
   margin: 25px 0 0 37px;
 }
 
-article.new .main .out:nth-child(4n+1) {
+article.new .main .out:nth-child(4n+1), article.hot .main .out:nth-child(4n+1) {
   margin-left: 0;
 }
 
-article.new .main .out img {
+article.new .main .out img, article.hot .main .out img {
   width: 100%;
   height: 130px;
 }
 
-article.new .main .out p {
+article.new .main .out p, article.hot .main .out p {
   font-size: 14px;
 }
 
-article.new .main .out p:last-of-type {
+article.new .main .out p:last-of-type, article.hot .main .out p:last-of-type {
   font-size: 13px;
   color: #AFAFAF;
   line-height: 20px;
 }
 
-article.new .main .out div {
+article.new .main .out div, article.hot .main .out div {
   font-size: 12px;
   color: #FF6B4A;
   padding-top: 10px;
 }
 
-article.new .main .out div span {
+article.new .main .out div span, article.hot .main .out div span {
   float: left;
 }
 
-article.new .main .out div span:nth-child(n+2) {
+article.new .main .out div span:nth-child(n+2), article.hot .main .out div span:nth-child(n+2) {
   color: #ABABAB;
   float: right;
   font-size: 12px;
@@ -103,11 +103,11 @@ article.new .main .out div span:nth-child(n+2) {
   margin-left: 3px;
 }
 
-article.new .main .out div span:nth-child(3) {
+article.new .main .out div span:nth-child(3), article.hot .main .out div span:nth-child(3) {
   background: url(../css/img/xin.png) no-repeat 0px 3px;
 }
 
-article.new .more {
+article.new .more, article.hot .more {
   text-align: center;
   padding: 50px 0;
   font-size: 16px;
@@ -115,7 +115,7 @@ article.new .more {
   color: #FF6B4A;
 }
 
-article.new .more > span {
+article.new .more > span, article.hot .more > span {
   float: left;
   padding-left: 20px;
   margin-left: 50%;
