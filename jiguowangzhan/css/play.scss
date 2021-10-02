@@ -31,7 +31,21 @@ section {
 article.new {
     background-color: #f7f7f7;
     overflow: hidden;
+    padding-bottom: 25px;
 
+    position: relative;
+    .loading{
+        width: 400px;
+        line-height: 120px;
+        text-align: center;
+        font-size: 30px;
+        border: 1px solid #999;
+        background-color: #fff;
+        position: absolute;
+        margin-left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+    }
     .main {
         width: 1000px;
         margin: 0 auto;

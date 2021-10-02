@@ -1,10 +1,14 @@
-
+var more = document.getElementsByClassName('more')[0];
+more.style.display='none';
 var Ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
 Ajax.open('get', 'http://192.168.1.107:3000/data/play_new.json', true);
 Ajax.send();
+var loading = document.getElementsByClassName('loading')[0];
 Ajax.onreadystatechange = function () {
     if (Ajax.readyState == 4) {
         if (Ajax.status == 200) {
+            loading.style.display='none';
+            more.style.display='block';
             var res = JSON.parse(Ajax.responseText);
             useres(res);
         } else {
@@ -23,7 +27,6 @@ function useres(res) {
 
 
 
-var more = document.getElementsByClassName('more')[0];
 var main = document.getElementsByClassName('main')[0];
 function outhid(){
     var out = document.getElementsByClassName('out');
@@ -42,10 +45,10 @@ function outhid(){
             }
         }else{
             more.value = 1;
-            for(var i = 0;i<out.length;i++){
-                out[i].style.display = 'block';
-            }
+            more.style.display='none';
+            
         }
     }
+    
 }
 
