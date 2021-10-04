@@ -2,7 +2,10 @@ var more = document.getElementsByClassName('more')[0];
 more.style.display = 'none';
 var loading = document.getElementsByClassName('loading')[0];
 
-function theAjax(theUrl) {
+function theAjax(elem,theUrl) {
+    if(elem==undefined||elem==''){
+        elem='art';
+    }
     var Ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
     Ajax.open('get', theUrl, true);
     Ajax.send();
@@ -12,19 +15,19 @@ function theAjax(theUrl) {
                 loading.style.display = 'none';
                 more.style.display = 'block';
                 var res = JSON.parse(Ajax.responseText);
-                useres(res);
+                useres(res,elem);
             } else {
                 console.log(Ajax.status);
             }
         }
     }
 }
-theAjax('http://192.168.1.107:3000/data/play_new.json');
+theAjax('art','http://192.168.1.107:3000/data/play_new.json');
 
-function useres(res) {
-    var html = template('art', {
+function useres(res,elem) {
+    var html = template(elem, {
         value: res
-    })
+   }) 
     document.getElementsByClassName('main')[0].innerHTML = html;
     outhid();
 }
@@ -68,10 +71,10 @@ $('.title>div').on('click',$('div'),function(index){
     $('.title>div').removeClass('c_color');
     $(this).addClass('c_color');
     if($(this).index()==0){
-        theAjax('http://192.168.1.107:3000/data/play_new.json')
+        theAjax('art','http://192.168.1.107:3000/data/play_new.json');
     }else if($(this).index()==1){
-        theAjax('http://192.168.1.107:3000/data/play_hot.json')
+        theAjax('art','http://192.168.1.107:3000/data/play_hot.json');
     }else{
-        theAjax('http://192.168.1.107:3000/data/play_category.json')
+        theAjax('art_category','http://192.168.1.107:3000/data/play_category.json');
     }
 })

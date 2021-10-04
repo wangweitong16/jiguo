@@ -30,7 +30,6 @@
 		</div>
 	</header>
 
-
 	<!-- 酷玩内容 -->
 	<section>
 		<div class="theme">发现酷玩</div>
@@ -45,7 +44,7 @@
 				loading
 			</div>
 			<div class="main"></div>
-			<!-- art-temlate渲染 -->
+			<!-- art-temlate渲染 new,hot -->
 			<script id="art" type="text/html">
 				<% for(var i = 0; i < value.length; i++){ %>
 					<% for(var j = 0; j < value[i].length; j++){ %>
@@ -64,6 +63,37 @@
 							</div>
 						</div>
 					<% } %>
+				<% } %>
+			</script>
+			<!-- art-temlate渲染 category -->
+			<script id="art_category" type="text/html">
+				<% for(var i = 0;i<value.length;i++) { %>
+					<div class="floor">
+						<p class="title"><%= value[i].title %></p>
+						<div class="center">
+							<div class="every">
+								<div><img src="./img/cat_1.png" alt=""></div>
+								<div>电动牙刷(<span>21</span>)</div>
+							</div>
+							<div class="every">
+								<div><img src="./img/cat_2.png" alt=""></div>
+								<div>电动牙刷(<span>21</span>)</div>
+							</div>
+							<div class="every">
+								<div><img src="./img/cat_3.png" alt=""></div>
+								<div>电动牙刷(<span>21</span>)</div>
+							</div>
+							<div class="every">
+								<div><img src="./img/cat_4.png" alt=""></div>
+								<div>电动牙刷(<span>21</span>)</div>
+							</div>
+						</div>
+						<div class="foot">
+							<% for(var j=0;j<value[i].list.length;j++) { %>
+								<div><%= value[i].list[j].productName %>(<span><%= value[i].list[j].nums %></span>)</div>
+							<% } %>
+						</div>
+					</div>
 				<% } %>
 			</script>
 			<div class="more">

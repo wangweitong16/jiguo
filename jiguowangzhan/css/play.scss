@@ -28,7 +28,7 @@ section {
     }
 }
 
-article.new,article.hot {
+article.new {
     background-color: #f7f7f7;
     overflow: hidden;
     padding-bottom: 25px;
@@ -50,6 +50,7 @@ article.new,article.hot {
         width: 1000px;
         margin: 0 auto;
         overflow: hidden;
+        /* new,hot部分 */
         .out {
             overflow: hidden;
             float: left;
@@ -98,6 +99,67 @@ article.new,article.hot {
 
                     &:nth-child(3) {
                         background: url(../css/img/xin.png) no-repeat 0px 3px;
+                    }
+                }
+            }
+        }
+        /* category部分 */
+        .floor{
+            background-color: #fff;
+            border: 1px solid #EAEAEA;
+            border-radius: 5px;
+            padding-top: 19px;
+            margin: 25px 0 10px 0;
+            .title{
+                font-size: 15px;
+                width: 100%;
+                line-height: 25px;
+                border-left: 6px solid #FF4D3F;
+                padding-left: 24px;
+            }
+            .center{
+                margin: 16px 25px 22px;
+                overflow: hidden;
+                font-size: 13px;
+                .every{
+                    float: left;
+                    margin: 20px 0 0 60px;
+                    &:nth-child(6n+1){
+                        margin-left: 0;
+                    }
+                    div{
+                        &:first-of-type{
+                            border-radius: 50%;
+                            border: 2px solid #DFDFDF;
+                            width: 92px;
+                            margin: 0 auto;
+                            overflow: hidden;
+                            background-color: #F6F6F6;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        &:last-of-type{
+                            margin-top: 16px;
+                            text-align: center;
+                            color: #DFDFDF;
+                        }
+                    }
+                }
+            }
+            .foot{
+                padding: 0 45px 16px;
+                border-top: 1px dashed #EAEAEA;
+                overflow: hidden;
+                div{
+                    float: left;
+                    width: 120px;
+                    text-align: center;
+                    color: #dfdfdf;
+                    font-size: 13px;
+                    margin:20px 0 0 30px;
+                    &:nth-child(6n+1){
+                        margin-left: 0;
                     }
                 }
             }
