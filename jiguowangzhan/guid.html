@@ -1,0 +1,141 @@
+<!-- 导购模块 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>极果·导购</title>
+	<link rel="stylesheet" href="./css/public.min.css">
+	<link rel="stylesheet" href="./css/play.min.css">
+	<script src="./js/template-web.js"></script>
+	<script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<header>
+		<div class="header_main">
+			<img src="./img/logonew.png" alt="" class="logo">
+			<nav>
+				<a href="./index.html">首页</a>
+				<a href="./play.html">酷玩</a>
+				<a href="./guid.html" class="the">导购</a>
+				<a href="#">使用</a>
+				<a href="#">报告</a>
+			</nav>
+			<button>注册</button>
+			<div class="search"></div>
+		</div>
+	</header>
+
+	<!-- 导购内容 -->
+	<section>
+		<div class="theme">导购清单</div>
+		<div class="title">
+			<div class="c_color">最新</div>
+			<div>最热</div>
+		</div>
+		<!-- 最新.最热 模块 -->
+		<article class="new">
+			<div class="loading">
+				loading
+			</div>
+			<div class="main"></div>
+			<!-- art-temlate渲染 new,hot -->
+			<script id="art" type="text/html">
+				<% for(var i = 0; i < value.length; i++){ %>
+          <div class="guid_out">
+          <div>
+							<img src="<%= value[i].img %>" alt="">
+							<p><%= value[i].text %></p>
+							<p><%= value[i].description %></p>
+							<div>
+								<span><%= value[i].like %></span>
+								<span><%= value[i].words %></span>
+							</div>
+						</div>
+          </div>
+				<% } %>
+			</script>
+			
+			<div class="more">
+				<span>点击加载更多</span>
+			</div>
+		</article>
+	</section>
+
+	<!-- 底部 -->
+	<footer>
+		<div class="center">
+			<img src="./img/code.png" alt="" class="qr">
+			<ul>
+				<img src="./img/logoImg.jpg" alt="">
+				<li>全球酷玩试用导购平台酷·新奇·好玩·品质</li>
+				<li>微信添加"JguoJguo"获取我们的服务。</li>
+			</ul>
+			<dl id="free">
+				<dt>免费试用</dt>
+				<dd><a href="#">试用流程</a></dd>
+				<dd><a href="#">如何提高成功率</a></dd>
+			</dl>
+			<dl class="peo">
+				<dt>友情链接</dt>
+				<dd>
+					<a href="#">智东西</a>
+					<a href="#">WEIBUSI</a>
+				</dd>
+				<dd>
+					<a href="#">搜狐IT</a>
+					<a href="#">腾讯科技</a>
+				</dd>
+				<dd>
+					<a href="#">搜狐数码</a>
+					<a href="#">凤凰科技</a>
+				</dd>
+				<dd>
+					<a href="#">凤凰数码</a>
+					<a href="#">PConline</a>
+				</dd>
+				<dd>
+					<a href="#">泡泡网</a>
+					<a href="#">3W咖啡</a>
+				</dd>
+				<dd>
+					<a href="#">ZUK社区</a>
+					<a href="#">亿觅emie</a>
+				</dd>
+				<dd>
+					<a href="#">极客公园</a>
+					<a href="#">易迅易启玩</a>
+				</dd>
+				<dd>
+					<a href="#">果库</a>
+				</dd>
+			</dl>
+			<dl id="buy">
+				<dt>购买攻略</dt>
+				<dd><a href="#">美亚海淘教程</a></dd>
+				<dd><a href="#">日亚海淘教程</a></dd>
+				<dd><a href="#">海淘转运攻略</a></dd>
+				<dd><a href="#">kickstarter 众筹购买攻略</a></dd>
+				<dd><a href="#">indiegogo 众筹购买攻略</a></dd>
+			</dl>
+			<dl id="shop">
+				<dt>厂商合作</dt>
+				<dd><a href="#">关于极果</a></dd>
+				<dd>联系我们</dd>
+				<dd><a href="#">商务合作：BD@jiguo.com</a></dd>
+				<dd><a href="#">CEO邮箱：CEO@jiguo.com</a></dd>
+			</dl>
+			<div class="copy">
+				&copy;2016极果版权所有
+			</div>
+		</div>
+		<div class="toTop"></div>
+	</footer>
+</body>
+<script src="./js/public.js"></script>
+<script src="./js/guid.js"></script>
+</html>

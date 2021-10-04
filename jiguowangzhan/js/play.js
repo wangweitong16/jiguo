@@ -3,6 +3,7 @@ more.style.display = 'none';
 var loading = document.getElementsByClassName('loading')[0];
 
 function theAjax(elem,theUrl) {
+    loading.style.display = 'block';
     if(elem==undefined||elem==''){
         elem='art';
     }

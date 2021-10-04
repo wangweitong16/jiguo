@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* 酷玩，导购 共用css */
 section {
   overflow: hidden;
 }
@@ -10,9 +11,10 @@ section .theme {
 }
 
 section .title {
-  width: 495px;
+  display: inline-block;
   overflow: hidden;
-  margin: 0 auto;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 
 section .title div {
@@ -107,6 +109,66 @@ article.new .main .out div span:nth-child(n+2) {
 }
 
 article.new .main .out div span:nth-child(3) {
+  background: url(../css/img/xin.png) no-repeat 0px 3px;
+}
+
+article.new .main .guid_out {
+  overflow: hidden;
+  float: left;
+  border-bottom: none;
+  border-radius: 6px;
+  width: 220px;
+  height: 210px;
+  background: url(./img/listbg.jpg) no-repeat 0px 197px;
+  overflow: hidden;
+  margin: 25px 0 0 30px;
+}
+
+article.new .main .guid_out > div {
+  overflow: hidden;
+  border: 1px solid #EAEAEA;
+  border-bottom: none;
+  background: #fff;
+  overflow: hidden;
+}
+
+article.new .main .guid_out > div:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+article.new .main .guid_out > div img {
+  width: 100%;
+  height: 130px;
+}
+
+article.new .main .guid_out > div p {
+  font-size: 14px;
+  height: 18.4px;
+}
+
+article.new .main .guid_out > div p:last-of-type {
+  font-size: 13px;
+  color: #AFAFAF;
+  line-height: 20px;
+}
+
+article.new .main .guid_out > div div {
+  font-size: 12px;
+  color: #FF6B4A;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+article.new .main .guid_out > div div span:nth-child(n+1) {
+  color: #ABABAB;
+  float: right;
+  font-size: 12px;
+  padding-left: 12px;
+  background: url(../css/img/reply.png) no-repeat 0px 3px;
+  margin-left: 3px;
+}
+
+article.new .main .guid_out > div div span:nth-child(2) {
   background: url(../css/img/xin.png) no-repeat 0px 3px;
 }
 
