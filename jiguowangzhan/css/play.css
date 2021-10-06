@@ -205,7 +205,6 @@ article.new .main .floor .center .every:nth-child(6n+1) {
 
 article.new .main .floor .center .every div:first-of-type {
   border-radius: 50%;
-  border: 2px solid #DFDFDF;
   width: 92px;
   margin: 0 auto;
   overflow: hidden;

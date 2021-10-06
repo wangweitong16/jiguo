@@ -1,12 +1,12 @@
 var more = document.getElementsByClassName('more')[0];
 more.style.display = 'none';
 var loading = document.getElementsByClassName('loading')[0];
-
 function theAjax(theUrl, who) {
   loading.style.display = 'block';
 
   var Ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
   Ajax.open('get', theUrl, true);
+  // Ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
   Ajax.send();
   Ajax.onreadystatechange = function () {
     if (Ajax.readyState == 4) {
