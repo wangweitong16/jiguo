@@ -1,0 +1,50 @@
+.regist{
+    width: 800px;
+    margin: 25px auto;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+}
+.regist p{
+    width: 100px;
+    border-left: 4px solid orangered;
+    text-align: center;
+    margin-top: 20px;
+}
+.regist ul{
+    width: 400px;
+    margin: auto;
+}
+.regist input{
+    width: 380px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.regist img{
+    position: relative;
+    top: 20px;
+}
+.regist .num_yzm,.regist .tpyzm{
+    width: 230px;
+}
+.btn1{
+    margin-left: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    color: #9e9b9b;
+    border: 1px solid #9e9b9b;
+}
+.btn2{
+    width: 400px;
+    height: 40px;
+    background-color: #FE5341;
+    color: white;
+    border-radius: 5px;
+    margin:20px 0;
+    border:none;
+}
