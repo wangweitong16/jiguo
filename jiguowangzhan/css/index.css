@@ -1,0 +1,255 @@
+h2 {
+  line-height: 66px;
+  font-size: 20px;
+  color: #444;
+}
+
+h2 span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fe5341;
+}
+
+.index_nav .nav_list li:nth-child(1) a {
+  color: #f92929;
+}
+
+.hot_shiyong {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hot_shiyong .lbt {
+  width: 1000px;
+  overflow: hidden;
+}
+
+.hot_shiyong .lbt .lbt_ {
+  width: 4000px;
+  overflow: hidden;
+}
+
+.hot_shiyong .index_lbt {
+  float: left;
+  font-size: 12px;
+  width: 1000px;
+  overflow: hidden;
+}
+
+.hot_shiyong .index_lbt li {
+  width: 220px;
+  float: left;
+  position: relative;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.hot_shiyong .index_lbt li .hot_rt_biaoshi {
+  padding: 2px 8px;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+}
+
+.hot_shiyong .index_lbt li .bs_sf {
+  color: #ffebdf;
+  background-color: #fe5745;
+}
+
+.hot_shiyong .index_lbt li .bs_tys {
+  color: #aaa176;
+  background: radial-gradient(#faf6c7, #f7e7b4);
+}
+
+.hot_shiyong .index_lbt li img {
+  width: 220px;
+  height: 130px;
+  cursor: pointer;
+}
+
+.hot_shiyong .index_lbt li h4 {
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0 9px;
+}
+
+.hot_shiyong .index_lbt li div {
+  margin: 10px 0 13px;
+}
+
+.hot_shiyong .index_lbt li div span {
+  border: 1px solid #dd4a67;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: #dd4a67;
+}
+
+.hot_shiyong .index_lbt li p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.hot_shiyong .index_lbt li span {
+  font-size: 12px;
+  color: #dd4a67;
+}
+
+.hot_shiyong .index_lbt li:not(li:nth-child(4n)) {
+  margin-right: 37px;
+}
+
+.hot_shiyong .index_lbt li:nth-child(4n+2) div span {
+  border-color: #a2b391;
+}
+
+.hot_shiyong .index_lbt li:nth-child(4n+2) span:not(p span, .hot_rt_biaoshi) {
+  color: #a2b391;
+}
+
+.hot_shiyong .index_lbt li:hover img:nth-of-type(1) {
+  animation: shan_ 1s linear infinite;
+}
+
+.hot_shiyong .lbt_zx {
+  display: block;
+  position: absolute;
+  width: 37px;
+  height: 78px;
+  top: 50%;
+  cursor: pointer;
+}
+
+.hot_shiyong .prev {
+  background: url(./img/prev.png) no-repeat;
+  left: -45px;
+}
+
+.hot_shiyong .next {
+  background: url(./img/next.png) no-repeat;
+  right: -45px;
+}
+
+.baogao_jx {
+  margin-top: 25px;
+  background-color: #f7f7f7;
+}
+
+.baogao_jx li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  transition: all .3s;
+}
+
+.baogao_jx li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px rgba(204, 204, 204, 0.8);
+}
+
+.daogou_jx {
+  padding-bottom: 45px;
+}
+
+.daogou_jx li {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.daogou_jx li img:last-child {
+  position: absolute;
+  bottom: -15px;
+}
+
+.daogou_jx li:hover img:nth-of-type(1) {
+  animation: shan_ 1s linear infinite;
+}
+
+.faxian_kuwan {
+  background-color: #f7f7f7;
+}
+
+.faxian_kuwan li > span {
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.faxian_kuwan .jx_list li {
+  background-color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  transition: all .3s;
+}
+
+.faxian_kuwan .jx_list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px rgba(204, 204, 204, 0.8);
+}
+
+.faxian_kuwan .jx_list li > p {
+  height: 17px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+.faxian_kuwan .jx_list div > span:nth-child(1) {
+  font-size: 13px;
+  color: #fb7898;
+}
+
+.jx_list {
+  padding-bottom: 20px;
+}
+
+.jx_list li {
+  width: 220px;
+  float: left;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.jx_list li img:nth-child(1) {
+  cursor: pointer;
+  width: 220px;
+  height: 130px;
+  margin-bottom: 12px;
+}
+
+.jx_list li p {
+  height: 34px;
+  font-size: 13px;
+  padding: 0 5px 0 10px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.jx_list li div {
+  padding: 0 10px;
+  font-size: 12px;
+  color: #989898;
+}
+
+.jx_list li div > span:nth-child(2) {
+  float: right;
+}
+
+.jx_list li div > span:nth-child(2) span:nth-child(1) {
+  padding-left: 15px;
+  background: url(./img/xin.png) no-repeat 0 center;
+}
+
+.jx_list li div > span:nth-child(2) span:nth-child(2) {
+  padding-left: 15px;
+  background: url(./img/reply.png) no-repeat 0 center;
+}
+
+.jx_list li:not(li:nth-child(4n)) {
+  margin-right: 37px;
+}

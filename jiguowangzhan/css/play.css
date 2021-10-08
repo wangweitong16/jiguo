@@ -68,6 +68,12 @@ article.new .main .out {
   height: 223px;
   overflow: hidden;
   margin: 25px 0 0 37px;
+  transition: transform 0.5s;
+}
+
+article.new .main .out:hover {
+  box-shadow: 0 2px 5px #DFDFDF;
+  transform: translateY(-5px);
 }
 
 article.new .main .out:nth-child(4n+1) {

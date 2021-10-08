@@ -23,7 +23,7 @@ function theAjax(elem,theUrl) {
         }
     }
 }
-theAjax('art','http://192.168.1.107:3000/data/play_new.json');
+theAjax('art','http://192.168.1.58:3000/data/play_new.json');
 
 function useres(res,elem) {
     var html = template(elem, {
@@ -72,10 +72,10 @@ $('.title>div').on('click',$('div'),function(index){
     $('.title>div').removeClass('c_color');
     $(this).addClass('c_color');
     if($(this).index()==0){
-        theAjax('art','http://192.168.1.107:3000/data/play_new.json');
+        theAjax('art','http://192.168.1.58:3000/data/play_new.json');
     }else if($(this).index()==1){
-        theAjax('art','http://192.168.1.107:3000/data/play_hot.json');
+        theAjax('art','http://192.168.1.58:3000/data/play_hot.json');
     }else{
-        theAjax('art_category','http://192.168.1.107:3000/data/play_category.json');
+        theAjax('art_category','http://192.168.1.58:3000/data/play_category.json');
     }
 })

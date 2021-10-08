@@ -21,7 +21,7 @@ function theAjax(theUrl, who) {
     }
   }
 }
-theAjax('http://192.168.1.107:3000/data/guid.json', 'new');
+theAjax('http://192.168.1.58:3000/data/guid.json', 'new');
 
 function useres(res, who) {
   var thewho = who;
@@ -78,8 +78,8 @@ $('.title>div').on('click', $('div'), function (index) {
   $('.title>div').removeClass('c_color');
   $(this).addClass('c_color');
   if ($(this).index() == 0) {
-    theAjax('http://192.168.1.107:3000/data/guid.json', 'new');
+    theAjax('http://192.168.1.58:3000/data/guid.json', 'new');
   } else if ($(this).index() == 1) {
-    theAjax('http://192.168.1.107:3000/data/guid.json', 'hot');
+    theAjax('http://192.168.1.58:3000/data/guid.json', 'hot');
   }
 })

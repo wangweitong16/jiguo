@@ -65,6 +65,11 @@ article.new {
             height: 223px;
             overflow: hidden;
             margin: 25px 0 0 37px;
+            transition: transform 0.5s;
+            &:hover{
+                box-shadow: 0 2px 5px #DFDFDF;
+                transform: translateY(-5px);
+            }
 
             &:nth-child(4n+1) {
                 margin-left: 0;
@@ -119,7 +124,7 @@ article.new {
             background: url(./img/listbg.jpg) no-repeat 0px 197px;
             overflow: hidden;
             margin: 25px 0 0 30px;
-
+            
             >div {
                 overflow: hidden;
                 border: 1px solid #EAEAEA;

@@ -7,28 +7,57 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>极果·酷玩</title>
-	<link rel="stylesheet" href="./css/public.min.css">
+	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/play.min.css">
 	<script src="./js/template-web.js"></script>
 	<script src="./js/jquery.min.js"></script>
 </head>
 
 <body>
-	<!-- 导航栏 -->
-	<header>
-		<div class="header_main">
-			<img src="./img/logonew.png" alt="" class="logo">
-			<nav>
-				<a href="./index.html">首页</a>
-				<a href="./play.html" class="the">酷玩</a>
-				<a href="./guid.html">导购</a>
-				<a href="#">使用</a>
-				<a href="#">报告</a>
-			</nav>
-			<button>注册</button>
-			<div class="search"></div>
+
+	<!-- 登录窗口 -->
+	<div class="wrap" id="login_wrap">
+		<div class="login_">
+				<div class="close_" id="close_l">×</div>
+				<div class="login_left fl">
+						<h3>极果账号登录</h3>
+						<div><span></span><input type="text" placeholder="手机号"></div>
+						<div><span></span><input type="text" placeholder="密码"></div>
+						<div>
+								<input type="checkbox">下次自动登录
+								<button>登录</button>
+						</div>
+						<div>
+								<span><a href="./regist.html">注册新账号</a></span>
+								<span>忘记密码？</span>
+						</div>
+				</div>
+				<div class="l_line"></div>
+				<div class="login_right fr">
+						<p>社交网络账号登录</p>
+						<img src="./img/login_ewm.png" alt="">
+						<div>
+								<span class="l_r_tubiao weibo"><span></span>微博</span>
+								<div class="l_r_line"></div>
+								<span class="l_r_tubiao qq"><span></span>QQ</span>
+						</div>
+				</div>
 		</div>
-	</header>
+</div>
+<!-- 首页的头部 -->
+<div class="index_nav">
+		<a href="./index.html" class="logo_back"></a>
+		<ul class="nav_list">
+				<li><a href="./index.html">首页</a></li>
+				<li class="the"><a href="./play.html" .the>酷玩</a></li>
+				<li><a href="./guid.html">导购</a></li>
+				<li><a href="./use/use_index.html">试用</a></li>
+				<li><a href="./report/report_index.html">报告</a></li>
+		</ul>
+		<span class="reg"><a href="./regist.html">注册</a></span>
+		<span class="login" id="login_"><a href="javascript:;">登录</a></span>
+		<span class="search"></span>
+</div>
 
 	<!-- 酷玩内容 -->
 	<section>
@@ -102,76 +131,57 @@
 		</article>
 	</section>
 
-	<!-- 底部 -->
-	<footer>
-		<div class="center">
-			<img src="./img/code.png" alt="" class="qr">
-			<ul>
-				<img src="./img/logoImg.jpg" alt="">
-				<li>全球酷玩试用导购平台酷·新奇·好玩·品质</li>
-				<li>微信添加"JguoJguo"获取我们的服务。</li>
-			</ul>
-			<dl id="free">
-				<dt>免费试用</dt>
-				<dd><a href="#">试用流程</a></dd>
-				<dd><a href="#">如何提高成功率</a></dd>
-			</dl>
-			<dl class="peo">
-				<dt>友情链接</dt>
-				<dd>
-					<a href="#">智东西</a>
-					<a href="#">WEIBUSI</a>
-				</dd>
-				<dd>
-					<a href="#">搜狐IT</a>
-					<a href="#">腾讯科技</a>
-				</dd>
-				<dd>
-					<a href="#">搜狐数码</a>
-					<a href="#">凤凰科技</a>
-				</dd>
-				<dd>
-					<a href="#">凤凰数码</a>
-					<a href="#">PConline</a>
-				</dd>
-				<dd>
-					<a href="#">泡泡网</a>
-					<a href="#">3W咖啡</a>
-				</dd>
-				<dd>
-					<a href="#">ZUK社区</a>
-					<a href="#">亿觅emie</a>
-				</dd>
-				<dd>
-					<a href="#">极客公园</a>
-					<a href="#">易迅易启玩</a>
-				</dd>
-				<dd>
-					<a href="#">果库</a>
-				</dd>
-			</dl>
-			<dl id="buy">
-				<dt>购买攻略</dt>
-				<dd><a href="#">美亚海淘教程</a></dd>
-				<dd><a href="#">日亚海淘教程</a></dd>
-				<dd><a href="#">海淘转运攻略</a></dd>
-				<dd><a href="#">kickstarter 众筹购买攻略</a></dd>
-				<dd><a href="#">indiegogo 众筹购买攻略</a></dd>
-			</dl>
-			<dl id="shop">
-				<dt>厂商合作</dt>
-				<dd><a href="#">关于极果</a></dd>
-				<dd>联系我们</dd>
-				<dd><a href="#">商务合作：BD@jiguo.com</a></dd>
-				<dd><a href="#">CEO邮箱：CEO@jiguo.com</a></dd>
-			</dl>
-			<div class="copy">
-				&copy;2016极果版权所有
-			</div>
+	<!-- 最底部信息部分 -->
+	<div class="footer">
+		<div class="ft_bx">
+				<div class="erweima"></div>
+				<div class="jiguo">
+						<img src="./img/logoImg.jpg" alt="">
+						<p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+						<p>微信添加"JguoJguo"获取我们的服务。</p>
+				</div>
+				<p class="banquan">&copy; 2016极果版权所有</p>
 		</div>
-		<div class="toTop"></div>
-	</footer>
+		<dl>
+				<dt><a href="./help.html"></a>免费试用</dt>
+				<dd>试用流程</dd>
+				<dd>如何提高成功率</dd>
+		</dl>
+		<dl>
+				<dt>友情链接</dt>
+				<dd>智东西</dd>
+				<dd>WEIBUSI</dd>
+				<dd>搜狐IT</dd>
+				<dd>腾讯科技</dd>
+				<dd>搜狐数码</dd>
+				<dd>凤凰科技</dd>
+				<dd>凤凰数码</dd>
+				<dd>PConline</dd>
+				<dd>泡泡网</dd>
+				<dd>3W咖啡</dd>
+				<dd>ZUK社区</dd>
+				<dd>亿觅emie</dd>
+				<dd>极客公园</dd>
+				<dd>易迅易启玩</dd>
+				<dd>果库</dd>
+		</dl>
+		<dl>
+				<dt>购买攻略</dt>
+				<dd>美亚海淘教程</dd>
+				<dd>日亚海淘教程</dd>
+				<dd>海淘转运攻略</dd>
+				<dd>kickstarter 众筹购买攻略</dd>
+				<dd>indiegogo 众筹购买攻略</dd>
+		</dl>
+		<dl>
+				<dt><a href="./about.html">厂商合作</a></dt>
+				<dd>关于极果</dd>
+				<dd>联系我们</dd>
+				<dd>商务合作：BD@jiguo.com</dd>
+				<dd>CEO邮箱：CEO@jiguo.com</dd>
+		</dl>
+</div>
 </body>
 <script src="./js/play.js"></script>
-<script src="./js/public.js"></script>
+<script src="./js/idnex1.js"></script>
 </html>
